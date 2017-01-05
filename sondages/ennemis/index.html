@@ -1,0 +1,504 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html40/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta name="DISTRIBUTION" content="GLOBAL">
+  <meta name="author" content="Alex Crampon &amp; Dubosson S&eacute;bastien   ">
+  <meta name="COPYRIGHT" content="Copyright (c) 2007-2008, Moonkiroe et les auteurs. ">
+  <meta name="description" content="Moonkiroe est un jeu Online multi-joueurs, de type RPG (jeu de role). Les joueurs y vivent des aventures palpitantes. Ce jeu comporte de nombreuses fonctions de gameplay (qu&eacute;te, drop, m&eacute;tier, commerce, combat de type action-rpg, et bien d'autres choses). Visitez le site pour t&eacute;l&eacute;charger du jeu video Moonkiroe (avec zone gratuite). Des news, des trailers, des vid&eacute;os, des goodies...">
+  <meta name="keywords" content="telecharger, jeux, jeu, gratuit, dubosson, free, download, moonkiroe, rpg, mmo, online, multi, joueurs, multiplayer, multi, player, jeu vid&eacute;o, mmorpg, massively multiplayer, 2D isom&eacute;trique, isometrique, action, blendmand, qu&egrave;te, quete, mmog, mmorpg gratuit, jeu gratuit, cybertwister, blender, blender 3D, gamemaker, jeu 2D isometrique, animation 3D">
+  <meta name="ROBOTS" content="INDEX, FOLLOW">
+  <meta name="REVISIT-AFTER" content="1 DAYS">
+  <meta name="RATING" content="GENERAL">
+  <title>Moonkiroe - MMO RPG - Jeu video Online multi joueur - sondage</title>
+
+  <link href="http://www.moonkiroe.com/fr/img/moonkiroe.ico" rel="SHORTCUT ICON">
+  <link rel="stylesheet" type="text/css" media="screen" href="../../main.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../../colorschemes/colorscheme2/colorscheme.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../../style.css">
+  <link href="../../css/import.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="live_tinc.js">
+  </script>
+  <script type="text/javascript">
+// Utilisation: spop( 'monfichier.html', 'MaPopup', 100, 100, 'Mes options (Facultatif)' )
+// spop( fichier, nom, largeur, hauteur, options )
+function spop( fichier, nom, largeur, hauteur, options )
+{
+var id = Math.round( Math.random() * 100 );
+var gauche = ( screen.width - largeur ) / 2;
+var haut = ( screen.height - hauteur ) / 2;
+if ( options )
+{
+options = 'width=' + largeur + 'px, height=' + hauteur + 'px, top=' + haut + ', left=' + gauche + ', ' + options;
+}
+else
+{
+options = 'width=' + largeur + 'px, height=' + hauteur + 'px, top=' + haut + ', left=' + gauche;
+}
+document.open( fichier, nom + id, options );
+}
+  </script>
+  <script language="JavaScript">
+function prechargimg() {
+var doc=document;
+if(doc.images){
+if(!doc.precharg) doc.precharg=new Array();
+var i,j=doc.precharg.length,x=prechargimg.arguments; for(i=0; i<x.length; i++)
+if (x[i].indexOf("#")!=0){
+doc.precharg[j]=new Image; doc.precharg[j++].src=x[i];
+}
+}
+}
+  </script>
+  <script language="javascript">
+function Popup(page,nom,dimension,option) {
+window.open(page,nom,dimension,option);
+}
+  </script>
+  <style type="text/css" media="all">
+/* Ce style CSS ne dois pas être enlevé, sinon les divs ne se cacherons pas ... */
+.cachediv {
+visibility: hidden;
+overflow: hidden;
+height: 1px;
+margin-top: -1px;
+position: absolute;
+}
+  </style><!-- Script créé par KevBrok ;-) -->
+  <script type="text/javascript">
+/*
+* Montre / Cache un div
+*/
+function DivStatus( nom, numero )
+{
+var divID = nom + numero;
+if ( document.getElementById && document.getElementById( divID ) ) // Pour les navigateurs récents
+{
+Pdiv = document.getElementById( divID );
+PcH = true;
+}
+else if ( document.all && document.all[ divID ] ) // Pour les veilles versions
+{
+Pdiv = document.all[ divID ];
+PcH = true;
+}
+else if ( document.layers && document.layers[ divID ] ) // Pour les très veilles versions
+{
+Pdiv = document.layers[ divID ];
+PcH = true;
+}
+else
+{
+PcH = false;
+}
+if ( PcH )
+{
+Pdiv.className = ( Pdiv.className == 'cachediv' ) ? '' : 'cachediv';
+}
+}
+/*
+* Cache tous les divs ayant le même préfixe
+*/
+function CacheTout( nom )
+{ var NumDiv = 1;
+if ( document.getElementById ) // Pour les navigateurs récents
+{
+while ( document.getElementById( nom + NumDiv) )
+{
+SetDiv = document.getElementById( nom + NumDiv );
+if ( SetDiv && SetDiv.className != 'cachediv' )
+{
+DivStatus( nom, NumDiv );
+}
+NumDiv++;
+}
+}
+else if ( document.all ) // Pour les veilles versions
+{
+while ( document.all[ nom + NumDiv ] )
+{
+SetDiv = document.all[ nom + NumDiv ];
+if ( SetDiv && SetDiv.className != 'cachediv' )
+{
+DivStatus( nom, NumDiv );
+}
+NumDiv++;
+}
+}
+else if ( document.layers ) // Pour les très veilles versions
+{
+while ( document.layers[ nom + NumDiv ] )
+{
+SetDiv = document.layers[ nom + NumDiv ];
+if ( SetDiv && SetDiv.className != 'cachediv' )
+{
+DivStatus( nom, NumDiv );
+}
+NumDiv++;
+}
+}
+}
+/*
+* Montre tous les divs ayant le même préfixe
+*/
+function MontreTout( nom )
+{ var NumDiv = 1;
+if ( document.getElementById ) // Pour les navigateurs récents
+{
+while ( document.getElementById( nom + NumDiv) )
+{
+SetDiv = document.getElementById( nom + NumDiv );
+if ( SetDiv && SetDiv.className != '' )
+{
+DivStatus( nom, NumDiv );
+}
+NumDiv++;
+}
+}
+else if ( document.all ) // Pour les veilles versions
+{
+while ( document.all[ nom + NumDiv ] )
+{
+SetDiv = document.all[ nom + NumDiv ];
+if ( SetDiv && SetDiv.className != '' )
+{
+DivStatus( nom, NumDiv );
+}
+NumDiv++;
+}
+}
+else if ( document.layers ) // Pour les très veilles versions
+{
+while ( document.layers[ nom + NumDiv ] )
+{
+SetDiv = document.layers[ nom + NumDiv ];
+if ( SetDiv && SetDiv.className != '' )
+{
+DivStatus( nom, NumDiv );
+}
+NumDiv++;
+}
+}
+}
+/*
+* Inverse les divs: Cache les divs visible et montre le divs cachés :)
+*/
+function InverseTout( nom )
+{ var NumDiv = 1;
+if ( document.getElementById ) // Pour les navigateurs récents
+{
+while ( document.getElementById( nom + NumDiv ) )
+{
+SetDiv = document.getElementById( nom + NumDiv );
+DivStatus( nom, NumDiv );
+NumDiv++;
+}
+}
+else if ( document.all ) // Pour les veilles versions
+{
+while ( document.all[ nom + NumDiv ] )
+{
+SetDiv = document.all[ nom + NumDiv ];
+DivStatus( nom, NumDiv );
+NumDiv++;
+}
+}
+else if ( document.layers ) // Pour les très veilles versions
+{
+while ( document.layers[ nom + NumDiv ] )
+{
+SetDiv = document.layers[ nom + NumDiv ];
+DivStatus( nom, NumDiv );
+NumDiv++;
+}
+}
+}
+  </script>
+</head>
+
+
+<body id="main_body" onLoad="prechargimg('images/','images/','images/','images/','images/')" >
+
+<div id="_wfx_document">
+<div id="container">
+<div id="header">
+<div id="slogan"></div>
+
+<div id="key_visual">
+&nbsp;
+</div>
+
+<div id="logo">
+&nbsp;
+</div>
+
+</div>
+
+<div id="main_nav_container">
+<ul id="main_nav_list">
+
+  <li> <a class="main_nav_active_item" href="../../news.php3" title="Annonces, &eacute;v&egrave;nements, archive..." alt="Annonces, &eacute;v&egrave;nements, archive..."><span class="main_nav_active_item_text">News </span></a></li>
+
+  <li> <a class="main_nav_item" href="../../le_jeu.php3" title="D&eacute;couvrir, d&eacute;buter, jouer ou voir les caract&eacute;ristiques du jeu.." alt="D&eacute;couvrir, d&eacute;buter, jouer ou voir les caract&eacute;ristiques du jeu.."><span class="main_nav_item_text">Le Guide du Jeu </span></a></li>
+
+  <li> <a class="main_nav_item" href="../../media.php3" title="Screenshots, trailer vid&eacute;os, wallpaper, artworks..." accesskey="e" alt="Screenshots, trailer vid&eacute;os, wallpaper, artworks..."><span class="main_nav_item_text">M&eacute;dias </span></a></li>
+
+  <li> <a class="main_nav_item" href="../../communaute.php3" title="Forums, site de fan" alt="Forums, site de fan"><span class="main_nav_item_text">Communaut&eacute; </span></a></li>
+
+  <li> <a class="main_nav_item" href="../../support.php3" title="Support, besoin d'aide, FAQ..." alt="Support, besoin d'aide, FAQ..."><span class="main_nav_item_text">Supports </span></a></li>
+
+  <li> <a class="main_nav_item" href="../../shop.php3" title="Abonnement, produits d&eacute;riv&eacute;s (BD, Manga, DVD...)" alt="Abonnement, produits d&eacute;riv&eacute;s (BD, Manga, DVD...)"><span class="main_nav_item_text">Boutique </span></a></li>
+
+</ul>
+
+</div>
+
+<div id="main_container">
+<div id="left_column_container">
+<div class="sub_nav_container">
+<div class="sub_nav_container">
+<ul class="sub_nav_list">
+
+  <div align="center"> <b><font face="Verdana" size="2">Connection
+: </font></b>
+  <form method="post" action="../../login.php3"><b><font face="Verdana" size="1">Pseudo <br>
+
+    <input name="pseudo_membre" type="text"> <br>
+
+    <br>
+
+Mot de passe </font></b> <br>
+
+    <input name="passe_membre" type="password"> <br>
+
+    <br>
+
+    <input name="Submit" value="Entrer" type="submit"></form>
+
+  </div>
+
+  <hr style="" 100="" height="" 2px="">
+  <li><a class="sub_nav_item" href="../../adduser.php3"><span class="sub_nav_item_text">Creer un compte </span></a></li>
+
+</ul>
+
+<ul class="sub_nav_list">
+<li><a class="main_nav_item" href="../../inscription_beta.php3" title="Inscription aux Béta tests" alt="Inscription aux Béta tests"><span class="main_nav_item_text">Inscription</span></a></li>
+</ul>
+<ul class="sub_nav_list">
+<li><a class="main_nav_item" href="../../telechargement.php3" title="Procédures de téléchargement, télécharger le jeu ou d'autres outils" alt="Procédures de téléchargement, télécharger le jeu ou d'autres outils"><span class="main_nav_item_text">Téléchargements</span></a></li>
+</ul></div><br>
+
+</div>
+
+<div id="sub_container1">
+</div>
+
+</div>
+
+<div id="sub_container2">
+<div xmlns:wal="http://www.schlund.de/webfix/assignmentLanguage" id="content_container" wal:element="content">
+<div style="text-align: center;"><span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span> <br>
+
+</div>
+
+<p style="text-align: center;">
+<span style="font-weight: bold;"></span><b>Sondage
+</b> </p>
+<br>
+<br>
+Nous effectuons un sondage afin de connaître vos préférences en terme de créatures à combattre. <br>
+Avant de répondre au sondage, il est utile de connaitre les différents ennemis qui devraient exister. POur cela, veuillez parcourir le lien suivant <a href="../../guide/" target="_blank">le guide de Moonkiroe</a>.<br>
+Ce sera plus facile pour voter :).<br>
+<br>
+Si vous connaissez déjà les différents ennemis  et leurs caractéristiques, et si vous avez déjà fait votre choix, alors vous pouvez voter.
+<br> <br>
+<i>Le vote permet de savoir quel sera le prochain ennemi à être développé et créé pour le jeu.</i>  <br>
+Pour Informations, sachez que certains ennemis sont déjà modélisé en 3D, il ne reste que l'animation à réaliser, et donc en fonction des réponses, cela nous permettra de définir quel est l'ennemi que nous intégrerons dans le jeu assez rapidement.
+
+
+<div id="footer_text">
+<p style="text-align: center;">
+
+<table width="170" align="center" border="0" cellspacing="0" cellpadding="1" bgcolor="#85899a">
+  <tr align="center"> 
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="-1" color="#FFFFFF"><b>Sondage Moonkiroe</b></font></td>
+  </tr>
+  <tr align="center">
+    <td> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="2" align="center" bgcolor="#FFFFFF" height="60">
+        <tr valign="middle"> 
+          <td colspan="2" height="40"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>Quel ennemi aimerie- vous  combattre en 1er?</b></font></td>
+        </tr>
+        <tr align="right" valign="bottom">
+          <td colspan="2"> 
+            <form method="post" action="/sondages/ennemis/index.php">
+              <table width="100%" border="0" cellspacing="0" cellpadding="1" height="100%">
+         <tr bgcolor="#FFFFFF">
+            <td width="15%">
+              <input type="radio" name="vote_for" value="Geny">
+            </td>
+            <td width="85%"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">Geny</font></td>
+         </tr>
+         <tr bgcolor="#FFFFFF">
+            <td width="15%">
+              <input type="radio" name="vote_for" value="Meduz">
+            </td>
+            <td width="85%"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">Meduz</font></td>
+         </tr>
+         <tr bgcolor="#FFFFFF">
+            <td width="15%">
+              <input type="radio" name="vote_for" value="Otruch">
+            </td>
+            <td width="85%"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">Otruch</font></td>
+         </tr>
+         <tr bgcolor="#FFFFFF">
+            <td width="15%">
+              <input type="radio" name="vote_for" value="Dragon">
+            </td>
+            <td width="85%"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">Dragon</font></td>
+         </tr>
+         <tr bgcolor="#FFFFFF">
+            <td width="15%">
+              <input type="radio" name="vote_for" value="Margoulette">
+            </td>
+            <td width="85%"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">Margoulette</font></td>
+         </tr>
+         <tr bgcolor="#FFFFFF">
+            <td width="15%">
+              <input type="radio" name="vote_for" value="Poupoulze">
+            </td>
+            <td width="85%"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">Poupoulze</font></td>
+         </tr>
+         <tr bgcolor="#FFFFFF">
+            <td width="15%">
+              <input type="radio" name="vote_for" value="Glouze">
+            </td>
+            <td width="85%"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">Glouze</font></td>
+         </tr>
+            <tr align="center" bgcolor="#FFFFFF" valign="top"> 
+              <td colspan="2" height="80"> 
+                <style type="text/css">
+                 <!--
+                  .input { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt}
+                  .links { color: #000000}
+                 -->
+                </style>
+                <input type="submit" name="Vote" value="Vote" class="input"><br><br>
+                <font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><a href="/sondages/ennemis/index.php?results=1" class="links">Voir les résultats</a></font></td>
+              </tr>
+             </table>
+           </form>
+         </td>
+       </tr>
+     </table>
+   </td>
+ </tr>
+</table>
+ 
+</p>
+</div>
+
+
+</div> </div> </div>
+
+
+
+
+<div id="footer">
+<div id="footer_text">
+<div id="sub_container2">
+<center>
+<div xmlns:wal="http://www.schlund.de/webfix/assignmentLanguage" id="content_container" wal:element="content"><font color="white" face="Arial" size="1"><b>|
+</b></font><b><b><a class="main_nav_item" href="../../dracaena.php3">Copyright
+&copy; 2007 Dracaena Studio.
+</a><font color="white" face="Verdana" size="1"><b>|
+</b></font>
+<b>
+
+
+
+
+<SCRIPT language="javascript">
+    var w;
+    function Conf() {
+       w=window.open("../../legal/confidentialite.php3","form1","width=716,height=546","menubar=no,scrollbars=no,statusbar=no");
+    }
+    function Fermer() {
+       if (w.document) { w.close(); }
+    }
+  </SCRIPT>
+
+<a HREF="javascript:Conf()" >Confidentialité</a><font face="Arial" size="1" color="white"> <b> | <b></font>
+
+<SCRIPT language="javascript">
+    var w;
+    function Ouvrir() {
+       w=window.open("../../legal/utilisation.php3","pop1","width=716,height=546");
+    }
+    function Fermer() {
+       if (w.document) { w.close(); }
+    }
+  </SCRIPT>
+
+
+<a href="javascript:Ouvrir()">Conditions
+d'Utilisation
+</a><font color="white" face="Arial" size="1"><b>|
+</b></font>
+<b><b><a href="../../contact.php3">Contacts
+</a><font color="white" face="Verdana" size="1"><b>|
+</b></font>
+</b></b></b></b></b></b></b></b></div>
+
+</center>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="extra_div1">
+<span></span></div>
+
+<div id="extra_div2">
+<span></span></div>
+
+<div id="extra_div3">
+<span></span></div>
+
+<div id="extra_div4">
+<span></span></div>
+
+<div id="extra_div5">
+<span></span></div>
+
+<div id="extra_div6">
+<span></span></div>
+
+<div id="extra_div7">
+<span></span></div>
+
+<div id="extra_div8">
+<span></span></div>
+
+<div id="extra_div9">
+<span></span></div>
+
+<div id="extra_div10">
+<span></span></div>
+
+<div id="extra_div11">
+<span></span></div>
+
+<div id="extra_div12">
+<span></span></div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<HTML>
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Win">
+<style type="text/css" media="all">
+ /* Ce style CSS ne dois pas être enlevé, sinon les divs ne se cacherons pas ... */ .cachediv { visibility: hidden; overflow: hidden; height: 1px; margin-top: -1px; position: absolute; } 
+</style>
+  <!-- Script créé par KevBrok ;-) -->
+  <SCRIPT TYPE="text/javascript">
+/*
+* Montre / Cache un div
+*/
+function DivStatus( nom, numero )
+{
+var divID = nom + numero;
+if ( document.getElementById && document.getElementById( divID ) ) // Pour les navigateurs récents
+{
+Pdiv = document.getElementById( divID );
+PcH = true;
+}
+else if ( document.all && document.all[ divID ] ) // Pour les veilles versions
+{
+Pdiv = document.all[ divID ];
+PcH = true;
+}
+else if ( document.layers && document.layers[ divID ] ) // Pour les très veilles versions
+{
+Pdiv = document.layers[ divID ];
+PcH = true;
+}
+else
+{
+PcH = false;
+}
+if ( PcH )
+{
+Pdiv.className = ( Pdiv.className == 'cachediv' ) ? '' : 'cachediv';
+}
+}
+/*
+* Cache tous les divs ayant le même préfixe
+*/
+function CacheTout( nom )
+{ var NumDiv = 1;
+if ( document.getElementById ) // Pour les navigateurs récents
+{
+while ( document.getElementById( nom + NumDiv) )
+{
+SetDiv = document.getElementById( nom + NumDiv );
+if ( SetDiv && SetDiv.className != 'cachediv' )
+{
+DivStatus( nom, NumDiv );
+}
+NumDiv++;
+}
+}
+else if ( document.all ) // Pour les veilles versions
+{
+while ( document.all[ nom + NumDiv ] )
+{
+SetDiv = document.all[ nom + NumDiv ];
+if ( SetDiv && SetDiv.className != 'cachediv' )
+{
+DivStatus( nom, NumDiv );
+}
+NumDiv++;
+}
+}
+else if ( document.layers ) // Pour les très veilles versions
+{
+while ( document.layers[ nom + NumDiv ] )
+{
+SetDiv = document.layers[ nom + NumDiv ];
+if ( SetDiv && SetDiv.className != 'cachediv' )
+{
+DivStatus( nom, NumDiv );
+}
+NumDiv++;
+}
+}
+}
+/*
+* Montre tous les divs ayant le même préfixe
+*/
+function MontreTout( nom )
+{ var NumDiv = 1;
+if ( document.getElementById ) // Pour les navigateurs récents
+{
+while ( document.getElementById( nom + NumDiv) )
+{
+SetDiv = document.getElementById( nom + NumDiv );
+if ( SetDiv && SetDiv.className != '' )
+{
+DivStatus( nom, NumDiv );
+}
+NumDiv++;
+}
+}
+else if ( document.all ) // Pour les veilles versions
+{
+while ( document.all[ nom + NumDiv ] )
+{
+SetDiv = document.all[ nom + NumDiv ];
+if ( SetDiv && SetDiv.className != '' )
+{
+DivStatus( nom, NumDiv );
+}
+NumDiv++;
+}
+}
+else if ( document.layers ) // Pour les très veilles versions
+{
+while ( document.layers[ nom + NumDiv ] )
+{
+SetDiv = document.layers[ nom + NumDiv ];
+if ( SetDiv && SetDiv.className != '' )
+{
+DivStatus( nom, NumDiv );
+}
+NumDiv++;
+}
+}
+}
+/*
+* Inverse les divs: Cache les divs visible et montre le divs cachés :)
+*/
+function InverseTout( nom )
+{ var NumDiv = 1;
+if ( document.getElementById ) // Pour les navigateurs récents
+{
+while ( document.getElementById( nom + NumDiv ) )
+{
+SetDiv = document.getElementById( nom + NumDiv );
+DivStatus( nom, NumDiv );
+NumDiv++;
+}
+}
+else if ( document.all ) // Pour les veilles versions
+{
+while ( document.all[ nom + NumDiv ] )
+{
+SetDiv = document.all[ nom + NumDiv ];
+DivStatus( nom, NumDiv );
+NumDiv++;
+}
+}
+else if ( document.layers ) // Pour les très veilles versions
+{
+while ( document.layers[ nom + NumDiv ] )
+{
+SetDiv = document.layers[ nom + NumDiv ];
+DivStatus( nom, NumDiv );
+NumDiv++;
+}
+}
+}
+  </SCRIPT>
+  <LINK REL="stylesheet" TYPE="text/css" media="screen" HREF="../main.css">
+  <LINK REL="stylesheet" TYPE="text/css" media="screen" HREF="../colorschemes/colorscheme2/colorscheme.css">
+  <LINK REL="stylesheet" TYPE="text/css" media="screen" HREF="../style.css">
+  <TITLE>Le guide du joueur - personnage : les Drons</TITLE>
+</HEAD>
+<BODY BGCOLOR="#c49351" ID="main_body">
+
+<P><CENTER><BR>
+<div id="guide_titre"><BR>
+<FONT COLOR="#ccd0d0"><b>Le
+guide du Joueur</b></FONT><BR>
+<BR></div></CENTER></P>
+
+
+
+<div id="header_guide"><br><br><br><br><div>
+
+
+<div id="main_guide">
+<div id="guide_container">
+
+<br>
+<P>Le guide est actuellement indisponible, il sera disponible lorsque le jeu sera sorti.<BR>
+<BR>
+
+<BR>
+Merci de votre compréhension.
+<BR>
+
+
+
+</span> </div></div>
+<div id="foot_guide"></div>
+
+
+
+</BODY>
+</HTML>
